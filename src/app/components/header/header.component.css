@@ -1,0 +1,70 @@
+header {
+  width: 100vw;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0;
+  color: #000;
+}
+
+h1 b {
+  color: var(--main-color);
+}
+
+nav h1 {
+  font-size: 2.25rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  padding: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+.menu a:hover {
+  border-bottom: 1px solid var(--main-color);
+  color: rgba(41, 41, 41, 0.39);
+}
+.search-buy i {
+  font-size: 1.25rem;
+  padding: 7px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.search-buy i:nth-child(2) {
+  background-color: var(--main-color);
+  color: #000;
+  transition: all 0.4s ease;
+}
+.search-buy i:hover {
+  color: rgba(41, 41, 41, 0.39);
+}
+.search-buy i:nth-child(2):hover {
+  background-color: var(--second-color);
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav .menu {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header nav .menu a {
+    font-size: 1.25rem;
+  }
+  header nav .search-buy {
+    display: none;
+  }
+}

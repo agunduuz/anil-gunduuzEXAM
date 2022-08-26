@@ -1,0 +1,177 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+section h3 {
+  font-size: var(--h3-size);
+}
+section .container {
+  display: flex;
+  margin-top: 25px;
+}
+.container .card {
+  padding: 20px;
+  background-color: var(--hover-color);
+  margin: 0 10px;
+  border-radius: 10px;
+  width: 350px;
+  transition: all 0.4s ease;
+}
+.container .card:hover {
+  background-color: #ddd;
+}
+
+.card .img {
+  background-image: url("https://picsum.photos/id/11/600/600");
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card .content {
+  margin-top: 15px;
+}
+.content h5 {
+  font-size: 1.5rem;
+}
+.content p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 !important;
+}
+.card p {
+  margin-top: 15px;
+}
+.card .buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buy p {
+  font-weight: 600;
+  background-color: var(--main-color);
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+}
+.card a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 15px 5px 0 5px;
+
+  padding: 10px;
+  background: var(--second-color);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.4s ease;
+  width: 50%;
+}
+.card:hover > a {
+  background-color: var(--second-color);
+}
+
+.stars {
+  padding: 0 !important;
+  margin: 10px 0 !important;
+  background-color: transparent !important;
+  flex-direction: row !important;
+}
+
+.stars i {
+  color: var(--main-color);
+  margin: 0 2px;
+}
+@media screen and (max-width: 1200px) {
+  section h3 {
+    margin-bottom: 30px;
+  }
+  section .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .container .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin-bottom: 10px;
+  }
+  .card .img {
+    height: 100px;
+    width: 100px;
+  }
+  .card .content {
+    margin: 0 15px;
+  }
+
+  .card p {
+    margin: 0;
+  }
+  .card .buy p {
+    margin: 10px;
+  }
+  .card .buy a {
+    margin: 0;
+    text-align: center;
+  }
+  .card .buy {
+    flex-direction: column;
+    width: 200px;
+  }
+  .stars {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  section h3 {
+    margin-bottom: 30px;
+  }
+  section .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .container .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    margin-bottom: 10px;
+  }
+  .card .img {
+    height: 100px;
+    width: 100px;
+  }
+  .card .content {
+    margin: 0 15px;
+    width: 150px;
+  }
+  .card .content p {
+    display: block;
+  }
+  .card p {
+    display: none;
+  }
+
+  .card .buy p {
+    margin: 10px;
+    display: block;
+  }
+  .card .buy a {
+    margin: 0;
+    text-align: center;
+  }
+  .card .buy {
+    flex-direction: column;
+    width: 150px;
+  }
+} ;
